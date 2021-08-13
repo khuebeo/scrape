@@ -11,7 +11,7 @@ AskAndWait::AskAndWait(std::shared_ptr<NestedBlock> q,
 void AskAndWait::exec() const
 {
     std::string answer;
-    std::cout<<question->getValue();
+    // std::cout<<question->getValue();
     if(std::getline(std::cin,answer))
     {
         answerVariable->setValue(answer);
